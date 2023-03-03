@@ -26,22 +26,24 @@ vim.opt.completeopt = "menu,menuone,noselect"
 cmp.setup({
 	snippet = {
 		expand = function(args)
-			-- luasnip.lsp_expand(args.body)
-			vim.fn["UltiSnips#Anon"](args.body)
+			luasnip.lsp_expand(args.body)
+			-- vim.fn["UltiSnips#Anon"](args.body)
 		end,
 	},
 
 	-- performance = {
-	-- 	debounce = 500,
-	-- 	trigger_debounce_time = 500,
+	-- 	debounce = 150,
+	-- 	trigger_debounce_time = 150,
 	-- 	throttle = 100,
 	-- 	fetching_timeout = 400,
 	-- },
 
 	completion = {
 		completeopt = "menu,menuone,noinsert",
-		keyword_length = 2,
+		keyword_length = 5,
 		debounce = 150,
+		group_index = 1,
+		max_item_count = 30,
 	},
 
 	mapping = cmp.mapping.preset.insert({
@@ -82,10 +84,3 @@ autocmd BufWritePost *.snippets :CmpUltisnipsReloadSnippets
 vim.o.lazyredraw = false
 vim.cmd([[set nolazyredraw]])
 vim.o.ttyfast = true
---
--- vim.cmd([[
---   augroup CmpDebounceAuGroup
---     au!
---     au TextChangedI * lua require("debounce").debounce()
---   augroup end
--- ]])

@@ -28,7 +28,7 @@ mason_lspconfig.setup({
 		-- "tailwindcss",
 		"lua_ls",
 		"quick_lint_js",
-		"cssmodules_ls",
+		-- "cssmodules_ls",
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed

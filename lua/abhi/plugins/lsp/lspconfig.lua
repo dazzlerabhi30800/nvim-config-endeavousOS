@@ -81,10 +81,10 @@ typescript.setup({
 })
 
 -- configure css server
--- lspconfig["cssls"].setup({
--- 	capabilities = capabilities,
--- 	on_attach = on_attach,
--- })
+lspconfig["cssls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
 
 --configure for SCSS server
 -- require("lspconfig").cssmodules_ls.setup({
@@ -128,7 +128,8 @@ lspconfig["lua_ls"].setup({
 local nvim_lsp = require("lspconfig")
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
-local servers = { "tsserver", "denols", "jsonls" }
+-- local servers = { "tsserver", "denols", "jsonls" }
+local servers = { "tsserver", "jsonls" }
 for _, lsp in ipairs(servers) do
 	nvim_lsp[lsp].setup({
 		autostart = false,
