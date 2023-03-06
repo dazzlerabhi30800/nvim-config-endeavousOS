@@ -13,8 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 
-	-- "wbthomason/packer.nvim",
-
 	"nvim-lua/plenary.nvim", -- lua functions that many plugins
 
 	-- file explorer
@@ -103,7 +101,6 @@ local plugins = {
 
 	-- auto closing
 	"windwp/nvim-autopairs", -- autoclose parens, brackets, quotes, etc...
-	-- { "windwp/nvim-ts-autotag", after = "nvim-treesitter" }, -- autoclose tags
 
 	-- for emmet
 	"mattn/emmet-vim",
@@ -123,10 +120,15 @@ local plugins = {
 	"folke/tokyonight.nvim",
 
 	--for tabs bufferline
-	{ "akinsho/nvim-bufferline.lua", tag = "v3.*" },
+	"akinsho/nvim-bufferline.lua",
 
 	-- vs code theme
 	"martinsione/darkplus.nvim",
+
+	-- for startup screen
+	{
+		"goolord/alpha-nvim",
+	},
 }
 
 local opts = {}

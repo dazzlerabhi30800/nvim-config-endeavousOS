@@ -82,3 +82,8 @@ mapKey("n", "<leader>4", ":BufferLineGoToBuffer 4<CR>", { noremap = true, silent
 mapKey("n", "<leader>5", ":BufferLineGoToBuffer 5<CR>", { noremap = true, silent = true })
 mapKey("n", "<leader>6", ":BufferLineGoToBuffer 6<CR>", { noremap = true, silent = true })
 mapKey("n", "<leader>7", ":BufferLineGoToBuffer 7<CR>", { noremap = true, silent = true })
+
+-- for the emmet
+-- vim.g.user_emmet_mode = "a"
+vim.g.user_emmet_leader_key = "<Tab>"
+-- vim.g.user_emmet_expandabrr_key = "<Tab>"
