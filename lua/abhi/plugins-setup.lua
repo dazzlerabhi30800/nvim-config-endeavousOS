@@ -124,6 +124,7 @@ local plugins = {
 
 	-- vs code theme
 	"martinsione/darkplus.nvim",
+	"nyoom-engineering/oxocarbon.nvim",
 
 	-- for startup screen
 	{

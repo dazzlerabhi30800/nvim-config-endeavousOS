@@ -12,8 +12,8 @@ local styles = cb.styles
 
 n.setup({
 	comment_italics = true,
-	background_set = true,
-	background_color = require("colorbuddy.init").Color.none,
+	background_set = false,
+	-- background_color = require("colorbuddy.init").Color.none,
 })
 
 -- if vim.g.neovide == true then

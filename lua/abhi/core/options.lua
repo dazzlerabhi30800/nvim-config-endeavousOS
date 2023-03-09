@@ -77,7 +77,8 @@ vim.lsp.set_log_level("off")
 -- vim.cmd([[hi normal guibg=NONE ctermbg=NONE]])
 
 if vim.g.neovide == true then
-	vim.opt.guifont = { "Hack Nerd Font", ":h12" }
+	-- vim.opt.guifont = { "Hack Nerd Font", ":h12" }
+	vim.opt.guifont = { "JetBrainsMono Nerd Font Mono", ":h12" }
 	opt.guicursor = "n-v-c:block-Cursor/lCursor,i-cr:hor10,r-cr:hor10,o:hor10"
 	-- opt.guicursor = "n-v-c:block-Cursor/lCursor,i-cr:ver10,r-cr:ver10,o:ver10"
 	-- opt.guicursor = "n-v-c:block-Cursor/lCursor,i-cr:ver20,r-cr:ver20,o:ver20"
